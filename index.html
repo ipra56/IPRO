@@ -1,27 +1,54 @@
-
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPRO - الموقع التجريبي</title>
-    <style>
-        body { background-color: #121212; color: white; font-family: Arial, sans-serif; }
-        header { text-align: center; padding: 2rem; }
-        main { padding: 1rem 2rem; }
-        footer { text-align: center; padding: 1rem; font-size: 0.8rem; color: gray; }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IPRO - الموقع التجريبي</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>مرحبا بكم في IPRO</h1>
-        <p>الموقع التجريبي قيد التطوير</p>
-    </header>
-    <main>
-        <p>هنا سيكون محتوى الموقع في المستقبل.</p>
-    </main>
-    <footer>
-        <p>© 2025 IPRO alhaji</p>
-    </footer>
+<header>
+  <h1>مرحباً بكم في IPRO</h1>
+  <input type="search" placeholder="ابحث هنا..." id="searchBox" />
+</header>
+
+<main>
+  <section class="posts">
+    <article class="post">
+      <h2>منشور تواصلي نموذجي</h2>
+      <p>هذا مثال على منشور يعرض المحتوى الاجتماعي.</p>
+      <div class="actions">
+        <button>إعجاب</button>
+        <button>تعليق</button>
+        <button>مشاركة</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="store">
+    <h2>المتجر</h2>
+    <div class="product">
+      <img src="https://via.placeholder.com/150" alt="منتج نموذجي" />
+      <h3>منتج 1</h3>
+      <p>وصف مختصر للمنتج.</p>
+      <p>السعر: 100 بيري</p>
+      <button>اشترِ الآن</button>
+    </div>
+  </section>
+
+  <section class="live-stream">
+    <h2>البث المباشر</h2>
+    <p>سيتم هنا عرض البث المباشر قريباً.</p>
+  </section>
+
+  <section class="points">
+    <h2>رصيد النقاط الخاص بك:</h2>
+    <p id="pointsBalance">500 بيري</p>
+  </section>
+</main>
+
+<button id="addContentBtn" title="نشر محتوى">+</button>
+
+<script src="script.js"></script>
 </body>
 </html>
